@@ -18,7 +18,7 @@ contract OnePieceMint is VRFConsumerBaseV2, ERC721, Ownable, ERC721URIStorage {
 
 	uint256 private s_tokenCounter; // Used to keep track of the number of NFTs being minted
 	VRFCoordinatorV2Interface private i_vrfCoordinator; // Used to store VRF coordinator link
-	uint64 private i_subscriptionId; // Used to store subscription ID from VRF chainlink
+	uint256 public i_subscriptionId; // Used to store subscription ID from VRF chainlink
 	bytes32 private i_keyHash; // Used to store key hash from VRF chainlink
 	uint32 private i_callbackGasLimit; // Used to specify the gas limit
 	
@@ -33,7 +33,7 @@ contract OnePieceMint is VRFConsumerBaseV2, ERC721, Ownable, ERC721URIStorage {
 
 	constructor(
 		address vrfCoordinatorV2Address,
-		uint64 subId,
+		uint256 subId,
 		bytes32 keyHash,
 		uint32 callbackGasLimit
 	) VRFConsumerBaseV2(vrfCoordinatorV2Address) ERC721("OnePiece NFT", "OPN"){
@@ -79,7 +79,7 @@ contract OnePieceMint is VRFConsumerBaseV2, ERC721, Ownable, ERC721URIStorage {
 		// Request random words from the VRF coordinator to determine the character traits
 		uint256 requestId = i_vrfCoordinator.requestRandomWords(
 			i_keyHash, 
-			i_subscriptionId,
+			uint64(i_subscriptionId),
 			3,
 			i_callbackGasLimit,
 			1
