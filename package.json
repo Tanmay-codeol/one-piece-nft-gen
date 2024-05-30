@@ -1,0 +1,15 @@
+{
+    "name": "one-piece-Dapp",
+    "lockfileVersion": 3,
+    "requires": true,
+    "packages": {},
+    "dependencies": {
+        "@chainlink/contracts": "^0.8.0",
+        "@openzeppelin/contracts": "^4.9.6",
+        "dotenv": "^16.4.5",
+        "hardhat": "^2.22.4"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^5.0.0"
+    }
+}
