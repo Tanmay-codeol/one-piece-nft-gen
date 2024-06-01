@@ -18,4 +18,4 @@ To install the packages just
 npm install
 ```
 # OUTPUT
-![]([https://github.com/Your_Repository_Name/Your_GIF_Name.gif](https://github.com/Tanmay-codeol/one-piece-nft-gen/blob/main/interact.gif))
+![](https://github.com/Tanmay-codeol/one-piece-nft-gen/blob/main/interact.gif))
