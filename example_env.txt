@@ -1,0 +1,6 @@
+PRIVATE_KEY=      
+SUB_ID=
+VRF_ADDRESS=
+KEY_HASH=
+API_KEY=
+contract_adress=
