@@ -17,5 +17,5 @@ To install the packages just
 ```shell
 npm install
 ```
-# OUTPUT (gif may tak some time to load)
+# OUTPUT (gif may take some time to load)
 ![](https://github.com/Tanmay-codeol/one-piece-nft-gen/blob/main/interact.gif)
